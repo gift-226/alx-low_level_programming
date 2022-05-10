@@ -99,9 +99,9 @@ for (; k >= 0; k--, i--)
 {
 if (i < 0)
 {
-if (add1 > 0)
+if (addl > 0)
 {
-add = (nout[k] - '0') + add1;
+add = (nout[k] - '0') + addl;
 if (add > 9)
 nout[k - 1] = (add / 10) + '0';
 nout[k] = (add % 10) + '0';
@@ -114,7 +114,7 @@ if (nout[0] != '0')
 break;
 lnout--;
 free(nout), nout = malloc(lnout + 1), nout = _initialize_array(nout, lnout);
-k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = add1 = 0;
+k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
 }
 if (j >= 0)
 {
@@ -122,29 +122,6 @@ add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl:
 addl = add / 10, nout[k] = (add % 10) + '0';
 }
 }
-printf("%\n", nout);
+printf("%s\n", nout);
 return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
