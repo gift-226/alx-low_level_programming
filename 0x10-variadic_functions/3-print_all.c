@@ -85,7 +85,7 @@ printer_t funcs[] = {
 	{"c", print_char},
 	{"i", print_int},
 	{"f", print_float},
-	{"s", printf_string}
+	{"s", print_string}
 };
 
 va_start(args, format);
