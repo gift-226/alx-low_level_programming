@@ -1,8 +1,3 @@
-/*
- * File: 3-print_all.c
- * Auth: Gift Onwuanaku
- */
-
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
@@ -87,10 +82,10 @@ va_list args;
 int i = 0, j = 0;
 char *separator = "";
 printer_t funcs[] = {
-{"c", print_char},
-{"i", print_int},
-{"f", print_float},
-{"s", printf_string}
+	{"c", print_char},
+	{"i", print_int},
+	{"f", print_float},
+	{"s", printf_string}
 };
 
 va_start(args, format);
@@ -116,44 +111,3 @@ printf("\n");
 
 va_end(args);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
