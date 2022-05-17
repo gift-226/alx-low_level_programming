@@ -15,11 +15,12 @@ op_t ops[] = {
 
 int i = 0;
 
-while (ops[i].op != NULL)
+while (i < 10)
 {
-if (!strcmp(ops[i].op, s))
-return (ops[i].f);
+if (s[0] == ops->op[i])
+break;
 i++;
 }
-return (NULL);
+
+return (ops[i / 2].f);
 }
